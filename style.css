@@ -1,0 +1,512 @@
+body {
+    font-family: 'Jua', sans-serif;
+    background-color: #ffffff;
+}
+.file-upload {
+    border-radius: 10px;
+    border: solid 1.5px #f6f7fa;
+    background-color: #f6f7fa;
+    padding: 20% 0%;
+}
+.file-upload-btn:active {
+    border: 0;
+    transition: all 0.2s ease;
+}
+.file-upload-content {
+    display: none;
+    text-align: center;
+}
+.file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+.image-upload-wrap {
+    position: relative;
+    object-fit: contain;
+    border-radius: 10px;
+    border: dashed 1.5px #35465d;
+    background-color: #ffffff;
+    width: 65%;
+    margin: 0 auto;
+}
+.image-upload-wrap: hover {
+    position: relative;
+    object-fit: contain;
+    border-radius: 10px;
+    border: dashed 1.5px #ffffff;
+    background-color: #35465d;
+    width: 65%;
+    margin: 0 auto;
+}
+.image-dropping,
+.image-upload-wrap:hover {
+    background-color: #35465d;
+    border: 4px dashed #ffffff;
+}
+.image-title-wrap {
+    padding: 0 15px 15px 15px;
+    color: #222;
+}
+.drag-text {
+    text-align: center;
+}
+.drag-text h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #15824b;
+    padding: 60px 0;
+    padding: 2;
+    font-size: 1.5rem;
+    line-height: 1.53;
+    text-align: center;
+    color: #35465d;
+    width: 50%;
+    margin: 0 auto;
+}
+.file-upload-image {
+    max-height: 50vw;
+    margin: auto;
+    padding: 20px;
+}
+.remove-image {
+    width: 200px;
+    margin: 0;
+    color: #fff;
+    background: #cd4535;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #b02818;
+    transition: all 0.2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.remove-image:hover {
+    background: #c13b2a;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.remove-image:active {
+    border: 0;
+    transition: all 0.2s ease;
+}
+.nav-distance {
+    padding: 2.1% 7.7%;
+}
+.navbar-light .navbar-brand {
+    line-height: 1.68;
+    text-align: left;
+    color: #35465d;
+}
+.navbar-light .navbar-toggler {
+    border-color: #ffffff;
+}
+.section {
+    margin-top: 100px;
+}
+.title {
+    line-height: 1.67;
+    text-align: center;
+    color: #35465d;
+}
+.subtitle {
+    line-height: 1.53;
+    text-align: center;
+    color: #35465d;
+} /* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 10px;
+    }
+    .navbar-brand {
+        font-size: 2rem;
+    }
+}
+.youtube {
+    font-size: 1.5rem;
+    line-height: 1.71;
+    text-align: center;
+    color: #f73737;
+    text-decoration: underline;
+}
+.youtube: hover {
+    font-size: 1rem;
+    line-height: 1.71;
+    text-align: center;
+    color: #f73737;
+    text-decoration: underline;
+}
+.name {
+    font-size: 2rem;
+    line-height: 1.71;
+    text-align: center;
+    color: #35465d;
+}
+.youtube-icon {
+    width: 8%;
+}
+.upload-text {
+    font-family: NanumSquareR;
+    font-size: 33px;
+    line-height: 1.53;
+    text-align: center;
+    color: #35465d;
+}
+
+.footer {
+    background-color: initial;
+    color: initial;
+}
+
+.bar-container {
+  height: 2.7rem;
+}
+.라푼젤-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #dcaae9;
+}
+.라푼젤-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #ba56d4;
+}
+.메리다-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #7fbfbf;
+}
+.메리다-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #008081;
+}
+.모아나-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #99cdff;
+}
+.모아나-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #3399fe;
+}
+.뮬란-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #ffdee5;
+}
+.뮬란-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #ffc0cb;
+}
+.백설공주-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #ec899d;
+}
+.백설공주-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #dc143b;
+}
+.벨-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #fce08c;
+}
+.벨-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #fac217;
+}
+.신데렐라-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #d7ebf2;
+}
+.신데렐라-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #add9e6;
+}
+
+.안나-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #ffbbca;
+}
+.안나-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #ff7994;
+}
+
+.에리얼-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #98d693;
+}
+.에리얼-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #2fad26;
+}
+
+.엘사-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #b2e5ff;
+}
+.엘사-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #66cbff;
+}
+
+.오로라-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #ff89c9;
+}
+.오로라-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #ff1494;
+}
+
+.자스민-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #9fefe6;
+}
+.자스민-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #3fe0d0;
+}
+
+.포카혼타스-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #ffd27f;
+}
+.포카혼타스-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #fea500;
+}
+
+.percent-text {
+  font-size: 1rem;
+  color: #ffffff;
+}
+.princess-label {
+    width: 20%;
+    text-align: left;
+    height: 2rem;
+}
+#label-container {
+    width: 80%;
+    margin: 0 auto;
+}
+.result-message {
+    font-size: 2rem;
+}
+
+
+.princess-explain {
+    font-size: 1.5rem;
+}
+.라푼젤-princess-title {
+    color: #ba56d4;
+}
+.라푼젤-princess-song {
+    color: #ba56d4;
+    font-size: 1.5rem;
+}
+.메리다-princess-title {
+    color:  #008081;
+}
+.메리다-princess-song {
+    color:  #008081;
+    font-size: 1.5rem;
+}
+.모아나-princess-title {
+    color: #3399fe;
+}
+.모아나-princess-song {
+    color: #3399fe;
+    font-size: 1.5rem;
+}
+.뮬란-princess-title {
+    color: #ffc0cb;
+}
+.뮬란-princess-song {
+    color: #ffc0cb;
+    font-size: 1.5rem;
+}
+.백설공주-princess-title {
+    color: #dc143b;
+}
+.백설공주-princess-song {
+    color: #dc143b;
+    font-size: 1.5rem;
+}
+.벨-princess-title {
+    color: #fac217;
+}
+.벨-princess-song {
+    color: #fac217;
+    font-size: 1.5rem;
+}
+.신데렐라-princess-title {
+    color: #add9e6;
+}
+.신데렐라-princess-song {
+    color: #add9e6;
+    font-size: 1.5rem;
+}
+.안나-princess-title {
+    color: #ff7994;
+}
+.안나-princess-song {
+    color: #ff7994;
+    font-size: 1.5rem;
+}
+.에리얼-princess-title {
+    color: #2fad26;
+}
+.에리얼-princess-song {
+    color: #2fad26;
+    font-size: 1.5rem;
+}
+.엘사-princess-title {
+    color: #66cbff;
+}
+.엘사-princess-song {
+    color: #66cbff;
+    font-size: 1.5rem;
+}
+.오로라-princess-title {
+    color: #ff1494;
+}
+.오로라-princess-song {
+    color: #ff1494;
+    font-size: 1.5rem;
+}
+
+.자스민-princess-title {
+    color: #3fe0d0;
+}
+.자스민-princess-song {
+    color: #3fe0d0;
+    font-size: 1.5rem;
+}
+.포카혼타스-princess-title {
+    color: #fea500;
+}
+.포카혼타스-princess-song {
+    color: #fea500;
+    font-size: 1.5rem;
+}
